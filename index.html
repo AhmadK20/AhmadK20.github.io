@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html LANG="en">
+<html lang="en">
     <head>
-        <title>This is my WebPage!!</title>
+        <title>Google Search</title>
+        <style>
+            #image {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 20px;
+            }
+            #advanced {
+                position: absolute;
+                top: 30px;
+                right: 0;
+                padding: 20px;
+            }
+        </style>
     </head>
     <body>
-        <h1>HELLO WORLD</h1>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Google Search">
+        </form>
+        <a id="image" href="image.html">Google images search</a>
+        <a id="advanced" href="advanced.html">Google advanced search</a>
     </body>
 </html>
