@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Google advanced Search</title>
-        <style>
-            a {
-                position: absolute;
-                top: 0;
-                right: 0;
-                padding: 20px;
-            }
-        </style>
+        <title>Google advanced search</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <form action="https://www.google.com/advanced_search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Advanced Search">
+        <h1 class="GoogleLabelAdvanced">
+            <span class="g1">G</span>
+            <span class="o1">o</span>
+            <span class="o2">o</span>
+            <span class="g2">g</span>
+            <span class="l">l</span>
+            <span class="e">e</span>
+        </h1>
+        <h2 id="AdvancedSearch" color="orange">Advanced Search</h2>
+        <hr id="line">
+        <div id="FindPagesWith">
+            <h3>Find pages with...</h3>
+            <h4>all these words:</h4>
+            <h4>this exact word or phrase:</h4>           
+            <h4>any of these words:</h4>
+            <h4>none of these words:</h4>
+            <form action="https://www.google.com/search">
+                <input class="InputFields" type="text" name="as_q">
+                <br>
+                <input class="InputFields" type="text" name="as_epq">
+                <br>
+                <input class="InputFields" type="text" name="as_oq">
+                <br>
+                <input class="InputFields" type="text" name="as_eq">
+                <br>
+                <input id="AdvancedSearchButton" type="submit" value="Advanced Search"> 
+            </form>
+        </div>
+        <form action="index.html">
+            <input id="BackToGoogleSearch" type="submit" value="Google search">
         </form>
-        <a href="index.html">Google search</a>
     </body>
 </html>
